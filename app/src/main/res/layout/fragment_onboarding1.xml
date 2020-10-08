@@ -8,6 +8,7 @@
     android:padding="32dp"
     tools:context=".Onboarding1Fragment">
 
+    <!-- Imagen libre -->
     <ImageView
         android:id="@+id/imagen"
         android:layout_width="wrap_content"
@@ -19,6 +20,7 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"/>
 
+    <!-- Comentario libre -->
     <TextView
         android:id="@+id/texto"
         android:layout_width="wrap_content"
@@ -31,14 +33,28 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"/>
 
+    <!-- Boton para avanzar a la siguiente pantalla-->
     <Button
         android:id="@+id/botonSiguiente"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:backgroundTint="#FFEB3B"
         android:text="Next"
-        app:layout_constraintTop_toBottomOf="@id/texto"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent" />
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imagen" />
+
+    <!-- Boton para llegar a la ultima pantalla-->
+    <Button
+        android:id="@+id/botonSkip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Skip"
+        android:background="#4CAF50"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/botonSiguiente"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
