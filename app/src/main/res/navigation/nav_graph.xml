@@ -27,6 +27,7 @@
     </fragment>
 
     <!-- Segunda pantalla -->
+
     <fragment
         android:id="@+id/onboarding1Fragment"
         android:name="com.example.p2onboarding.Onboarding1Fragment"
